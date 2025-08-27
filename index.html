@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bio liên hệ – Thu mua Acc Liên Quân SS/SSS</title>
-  <meta name="description" content="Bio liên hệ chuyên nghiệp. Thu mua acc Liên Quân SS/SSS, hỗ trợ nhanh chóng, uy tín." />
+  <title>Nhận Cày Rank Siêu Tốc Giá Rẻ – Tất Cả Rank & Top Tướng</title>
+  <meta name="description" content="Bio liên hệ chuyên nghiệp. Nhận cày rank Liên Quân siêu tốc giá rẻ cho mọi bậc từ Đồng đến Thách Đấu, hỗ trợ Top tướng theo yêu cầu, uy tín - nhanh gọn." />
   <style>
     :root{
       --bg:#05070d;--panel:#0f172a;--text:#eaf2ff;--muted:#cbd5e1;
@@ -85,15 +85,171 @@
     .toast[data-show="true"]{display:flex}
 
     @keyframes shimmer{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
-  </style>
+  
+/* ===== UI Polish Pack ===== */
+:root{
+  --glass: rgba(255,255,255,.06);
+  --border: rgba(148,163,184,.28);
+  --ring: 0 0 0 3px rgba(34,211,238,.14);
+}
+/* Smooth rendering */
+html{scroll-behavior:smooth}
+body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+
+/* Hero badges */
+.badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:14px 0 4px}
+.badge{padding:6px 10px;border-radius:999px;border:1px solid var(--border);
+  background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));
+  font-weight:700;color:#dbeafe;box-shadow:0 10px 22px rgba(0,0,0,.18)}
+
+/* Button upgrades */
+.btn{letter-spacing:.2px}
+.btn .sub{opacity:.8;font-weight:600;font-size:12px}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn.primary{background:linear-gradient(135deg,#2563eb 0%,#0ea5e9 100%);}
+.btn.primary:hover{box-shadow:0 10px 30px rgba(14,165,233,.35), var(--ring)}
+.btn.ok{background:linear-gradient(135deg,#16a34a 0%,#22c55e 100%)}
+.btn.ok:hover{box-shadow:0 10px 30px rgba(34,197,94,.35), var(--ring)}
+
+/* Cards & grids */
+.grid{display:grid;gap:14px}
+.grid.cols-3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{border:1px solid var(--border);border-radius:18px;padding:16px;background:var(--glass);
+  backdrop-filter:blur(10px);box-shadow:0 14px 36px rgba(0,0,0,.28)}
+.card h4{margin:2px 0 8px;font-size:18px;color:#e2e8f0}
+.card p{margin:0;color:#cbd5e1}
+
+/* Feature list */
+.li{display:flex;gap:10px;align-items:flex-start}
+.li .ico{font-size:20px;line-height:1.2}
+.li .txt{flex:1}
+
+/* Pricing stripe */
+.pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:10px}
+.tier{padding:18px;border-radius:18px;border:1px solid rgba(56,189,248,.35);
+  background:linear-gradient(180deg,rgba(2,6,23,.7),rgba(2,6,23,.5));
+  box-shadow:0 0 24px rgba(56,189,248,.18), inset 0 0 14px rgba(34,211,238,.2)}
+.tier .h{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.tier .price{font-weight:900;font-size:22px;color:#e5f0ff}
+.tier .cta{justify-content:stretch}
+.tier .cta .btn{flex:1;justify-content:center}
+
+/* Trust bar */
+.trust{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:6px}
+.trust .chip{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:999px;
+  border:1px solid var(--border);background:rgba(2,6,23,.55);color:#cfe7ff}
+
+/* Section titles */
+section h3{font-size:22px;letter-spacing:.3px}
+
+/* Header lighting refine */
+header h1{filter:drop-shadow(0 6px 26px rgba(34,211,238,.18))}
+
+/* Sticky dock stronger */
+.dock .bar{gap:12px;padding:12px 12px}
+.dock .bar a,.dock .bar button{border-radius:12px}
+
+/* Subtle floating glow */
+.floating{
+  position:absolute;inset:auto;pointer-events:none;z-index:0;
+  width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(closest-side,rgba(56,189,248,.12),transparent 70%);
+  filter:blur(40px);opacity:.5;animation:float 10s ease-in-out infinite
+}
+@keyframes float{
+  0%{transform:translate(10px,0)}
+  50%{transform:translate(-10px,12px)}
+  100%{transform:translate(10px,0)}
+}
+
+/* Small helper for subdued text */
+.muted{color:#a3b4cc}
+
+
+/* ===== Premium Polish v2 ===== */
+
+/* Background mesh + depth */
+body{
+  background:
+    radial-gradient(1200px 800px at -10% -20%,rgba(96,165,250,.18),transparent 60%),
+    radial-gradient(1400px 900px at 110% 0,rgba(34,211,238,.12),transparent 50%),
+    conic-gradient(from 180deg at 10% 20%, rgba(56,189,248,.08), transparent 30%, rgba(99,102,241,.08), transparent 60%, rgba(34,211,238,.06), transparent 85%),
+    var(--bg);
+}
+
+/* Headline underline animation */
+header h1::after{
+  height:4px;
+  background:linear-gradient(90deg,transparent,#67e8f9,#60a5fa,#a78bfa,transparent);
+  animation:shine 3.2s ease-in-out infinite;
+}
+@keyframes shine{
+  0%{filter:drop-shadow(0 0 4px rgba(34,211,238,.25))}
+  50%{filter:drop-shadow(0 0 14px rgba(34,211,238,.45))}
+  100%{filter:drop-shadow(0 0 4px rgba(34,211,238,.25))}
+}
+
+/* Hero KPIs */
+.kpis{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+.kpi{min-width:160px;text-align:center;border:1px solid var(--border);border-radius:16px;padding:10px 12px;
+  background:var(--glass);backdrop-filter:blur(10px);box-shadow:0 10px 26px rgba(0,0,0,.22)}
+.kpi b{display:block;font-size:22px;letter-spacing:.4px;color:#e8f2ff}
+.kpi span{font-size:12px;color:#a8b8d8}
+
+/* Animated section divider */
+.divider{height:1px;margin:18px auto;width:min(880px,92%);
+  background:linear-gradient(90deg,transparent,rgba(148,163,184,.5),transparent);position:relative}
+.divider::after{content:"";position:absolute;inset:auto 0 auto 0;height:3px;top:-1px;
+  background:linear-gradient(90deg,transparent,#67e8f9,#60a5fa,#a78bfa,transparent);
+  filter:blur(6px);opacity:.35}
+
+/* Card hover tilt */
+.card{transform:translateZ(0);transition:transform .18s ease, box-shadow .18s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 18px 44px rgba(0,0,0,.42)}
+
+/* CTA pulse */
+.btn.primary, .btn.ok{position:relative;isolation:isolate}
+.btn.primary::after, .btn.ok::after{
+  content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  box-shadow:0 0 0 0 rgba(14,165,233,.0);animation:pulse 2.6s ease-out infinite
+}
+.btn.ok::after{animation:pulse-green 2.6s ease-out infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(14,165,233,.35)}70%{box-shadow:0 0 0 16px rgba(14,165,233,0)}100%{box-shadow:0 0 0 0 rgba(14,165,233,0)}}
+@keyframes pulse-green{0%{box-shadow:0 0 0 0 rgba(34,197,94,.35)}70%{box-shadow:0 0 0 16px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}
+
+/* Sticky dock refinement */
+.dock .bar{background:rgba(2,6,23,.7);backdrop-filter:blur(12px);border-color:rgba(148,163,184,.35)}
+
+/* FAQ styles */
+.faq{max-width:980px;margin:20px auto}
+.faq details{border:1px solid var(--border);border-radius:14px;background:var(--glass);backdrop-filter:blur(8px);
+  padding:12px;margin-bottom:10px;box-shadow:0 10px 26px rgba(0,0,0,.18)}
+.faq summary{cursor:pointer;font-weight:700;color:#e2e8f0;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq p{margin:8px 0 2px;color:#cbd5e1}
+
+/* Scroll reveal */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease, transform .5s ease}
+.reveal.is-visible{opacity:1;transform:translateY(0)}
+
+</style>
 </head>
 <body>
   <header>
+    <div class="floating" style="top:-40px;left:-60px"></div>
+    
+    <div class="floating" style="top:40px;right:-60px"></div>
     <div class="ring"></div>
-    <h1>Bio Liên Hệ — Thu mua Acc Liên Quân SS/SSS</h1>
-    <p>Uy tín – Nhanh gọn – Giá tốt. Nhận thu gom số lượng lớn acc SS/SSS, skin hiếm, lực chiến cao.</p>
+    <h1>Nhận Cày Rank Siêu Tốc Giá Rẻ (Tất Cả Các Bậc Rank Từ Đồng - Thách Đấu) và Top Tướng</h1>
+    <div class="badges">
+      <span class="badge">⚡ Siêu tốc 24/7</span>
+      <span class="badge">🎯 Tất cả bậc rank</span>
+      <span class="badge">🏆 Top tướng theo yêu cầu</span>
+      <span class="badge">🛡️ Bảo mật tài khoản</span>
+    </div>
+    <p>Uy tín – Nhanh gọn – Giá tốt. Nhận cày tất cả các bậc rank từ Đồng đến Thách Đấu, hỗ trợ Top tướng theo yêu cầu.</p>
     <div class="cta">
-      <a class="btn primary" href="tel:0385651640">📞 Gọi ngay</a>
+      <a class="btn primary" href="tel:0385651640">📞 Cày thuê ngay</a>
       <a class="btn" href="https://zalo.me/0385651640" target="_blank" rel="noopener">💬 Zalo</a>
       <button id="btnCopy" class="btn ok" type="button">📋 Sao chép số</button>
     </div>
@@ -103,7 +259,125 @@
     </div>
   </header>
 
-  <section>
+  
+<section aria-label="Ưu điểm dịch vụ">
+  <h3>Vì sao chọn chúng tôi?</h3>
+  <div class="grid cols-3">
+    <div class="card li">
+      <div class="ico">⚡</div>
+      <div class="txt">
+        <h4>Tốc độ vượt trội</h4>
+        <p>Nhận cày siêu tốc, theo mốc thời gian bạn yêu cầu, cập nhật tiến độ rõ ràng.</p>
+      </div>
+    </div>
+    <div class="card li">
+      <div class="ico">🛡️</div>
+      <div class="txt">
+        <h4>Bảo mật tối đa</h4>
+        <p>Ẩn IP, không can thiệp dữ liệu cá nhân, nói không với can thiệp rủi ro.</p>
+      </div>
+    </div>
+    <div class="card li">
+      <div class="ico">🎯</div>
+      <div class="txt">
+        <h4>Đủ mọi bậc rank</h4>
+        <p>Từ Đồng → Thách Đấu, gói theo sao/chuỗi RANK, hoặc theo mục tiêu ngày/tuần.</p>
+      </div>
+    </div>
+    <div class="card li">
+      <div class="ico">🏆</div>
+      <div class="txt">
+        <h4>Top tướng yêu cầu</h4>
+        <p>Đẩy Top tướng (Đi lane, đi rừng, sp...) theo map pool bạn mong muốn.</p>
+      </div>
+    </div>
+    <div class="card li">
+      <div class="ico">💬</div>
+      <div class="txt">
+        <h4>Hỗ trợ 24/7</h4>
+        <p>Luôn có mặt để phản hồi — Zalo/Call nhanh, rõ ràng — không chờ đợi.</p>
+      </div>
+    </div>
+    <div class="card li">
+      <div class="ico">✅</div>
+      <div class="txt">
+        <h4>Cam kết rõ ràng</h4>
+        <p>Hoàn tiền phần chưa đạt nếu không chạm mục tiêu đúng cam kết.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="trust">
+    <span class="chip">🔒 Không đổi mật khẩu sau khi hoàn tất</span>
+    <span class="chip">🚫 Không sử dụng phần mềm gian lận</span>
+    <span class="chip">📈 Báo cáo tiến độ theo yêu cầu</span>
+  </div>
+</section>
+
+
+
+
+<section class="kpis reveal" aria-label="Chỉ số dịch vụ">
+  <div class="kpi"><b>1.2K+</b><span>Đơn hàng hoàn tất</span></div>
+  <div class="kpi"><b>85–95%</b><span>Tỉ lệ thắng mục tiêu</span></div>
+  <div class="kpi"><b>24/7</b><span>Hỗ trợ nhanh</span></div>
+</section>
+
+<section class="faq reveal" aria-label="Câu hỏi thường gặp">
+  <h3>FAQ – Câu hỏi thường gặp</h3>
+  <details>
+    <summary>Thời gian cày một bậc rank mất bao lâu?</summary>
+    <p>Phổ biến trong 2–12 giờ tùy bậc rank hiện tại và mục tiêu. Bạn có thể yêu cầu deadline cụ thể.</p>
+  </details>
+  <details>
+    <summary>Tài khoản có bị đổi mật khẩu/ảnh hưởng gì không?</summary>
+    <p>Không. Chúng tôi không can thiệp dữ liệu cá nhân, không đổi thông tin tài khoản. Bảo mật là ưu tiên số 1.</p>
+  </details>
+  <details>
+    <summary>Top tướng có đảm bảo giữ hạng không?</summary>
+    <p>Chúng tôi đẩy Top theo mốc bạn chọn và hướng dẫn duy trì chỉ số sau khi hoàn tất.</p>
+  </details>
+  <details>
+    <summary>Thanh toán như thế nào?</summary>
+    <p>Chuyển khoản/ZaloPay. Có thể cọc trước & thanh toán phần còn lại sau khi hoàn tất.</p>
+  </details>
+</section>
+<section aria-label="Bảng giá tham khảo">
+  <h3>Gói dịch vụ phổ biến</h3>
+  <div class="pricing">
+    <div class="tier">
+      <div class="h">
+        <strong>Boost nhanh 1–2 bậc</strong>
+        <span class="price">Liên hệ</span>
+      </div>
+      <p class="muted">Đẩy nhanh 1–2 bậc với tỉ lệ thắng cao, phù hợp leo gấp.</p>
+      <div class="cta cta">
+        <a class="btn primary" href="tel:0385651640">📞 Cày ngay</a>
+      </div>
+    </div>
+    <div class="tier">
+      <div class="h">
+        <strong>Leo chuỗi sao</strong>
+        <span class="price">Tiết kiệm</span>
+      </div>
+      <p class="muted">Gói theo số sao / mốc rank, tối ưu chi phí cho hành trình dài.</p>
+      <div class="cta cta">
+        <a class="btn ok" href="https://zalo.me/0385651640" target="_blank" rel="noopener">💬 Nhắn Zalo</a>
+      </div>
+    </div>
+    <div class="tier">
+      <div class="h">
+        <strong>Top tướng theo yêu cầu</strong>
+        <span class="price">Liên hệ</span>
+      </div>
+      <p class="muted">Tập trung 1–3 tướng chính để giữ Top, báo cáo lịch sử trận.</p>
+      <div class="cta cta">
+        <button class="btn" type="button" id="btnQuote">📝 Nhận báo giá</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
     <h3>Thông tin nhanh</h3>
     <ul>
       <li>Thu mua acc Liên Quân SS/SSS, skin hiếm, vật phẩm giới hạn.</li>
@@ -181,5 +455,60 @@
     const copyAccBtn = document.getElementById('copyAcc'); if(copyAccBtn) copyAccBtn.addEventListener('click', copyAcc);
     const copyNameBtn = document.getElementById('copyName'); if(copyNameBtn) copyNameBtn.addEventListener('click', copyName);
   </script>
+
+<script>
+(function(){
+  const copy = document.getElementById('btnCopy');
+  const quote = document.getElementById('btnQuote');
+  const toast = document.querySelector('.toast') || (function(){
+    const t = document.createElement('div');
+    t.className = 'toast'; t.textContent = 'Đã sao chép!';
+    document.body.appendChild(t); return t;
+  })();
+  function showToast(text){
+    toast.textContent = text || 'Thao tác thành công!';
+    toast.setAttribute('data-show','true');
+    setTimeout(()=>toast.removeAttribute('data-show'),1600);
+  }
+  if (copy){
+    copy.addEventListener('click',()=>{
+      navigator.clipboard.writeText('0385651640').then(()=>showToast('Đã sao chép số: 0385 651 640'));
+    });
+  }
+  if (quote){
+    quote.addEventListener('click',()=>{
+      const msg = 'Xin chào, mình muốn nhận báo giá cày rank / top tướng.';
+      const url = 'https://zalo.me/0385651640';
+      showToast('Mở Zalo để nhận báo giá...');
+      window.open(url,'_blank');
+    });
+  }
+})();
+</script>
+
+
+<script>
+(function(){
+  const els=[...document.querySelectorAll('.reveal')];
+  if('IntersectionObserver'in window){
+    const io=new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('is-visible'); io.unobserve(e.target);} });
+    },{threshold:.12});
+    els.forEach(el=>io.observe(el));
+  }else{
+    els.forEach(el=>el.classList.add('is-visible'));
+  }
+
+  // Add rating chip into dock if available
+  const dock=document.querySelector('.dock .bar');
+  if(dock){
+    const chip=document.createElement('div');
+    chip.className='chip'; chip.textContent='⭐ Đánh giá 5.0';
+    chip.style.marginRight='6px';
+    dock.prepend(chip);
+  }
+})();
+</script>
+
 </body>
 </html>
